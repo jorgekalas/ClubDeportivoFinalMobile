@@ -1,0 +1,34 @@
+### GET members
+GET http://localhost:8081/members
+Accept: application/json
+
+###
+
+### POST new member
+POST http://localhost:8081/members
+Content-Type: application/json
+
+{
+  "name": "Jorge Kalas",
+  "dni": "12345678",
+  "email": "jorge@example.com",
+  "active": true
+}
+
+###
+
+### GET activities
+GET http://localhost:8081/activities
+Accept: application/json
+
+###
+
+### POST new activity
+POST http://localhost:8081/activities
+Content-Type: application/json
+
+{
+  "name": "Fútbol 7",
+  "capacity": 20,
+  "available": true
+}

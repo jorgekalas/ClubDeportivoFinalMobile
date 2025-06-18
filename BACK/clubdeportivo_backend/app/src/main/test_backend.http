@@ -1,0 +1,52 @@
+### GET members
+GET http://localhost:8081/members
+Accept: application/json
+
+###
+
+### POST new member
+POST http://localhost:8081/members
+Content-Type: application/json
+
+{
+  "name": "Jorge Kalas",
+  "dni": "12345678",
+  "email": "jorge@example.com",
+  "active": true
+}
+
+###
+
+### GET activities
+GET http://localhost:8081/activities
+Accept: application/json
+
+###
+
+### POST new activity
+POST http://localhost:8081/activities
+Content-Type: application/json
+
+{
+  "name": "Fútbol 5",
+  "capacity": 15,
+  "available": true
+}
+
+###
+
+### GET payments
+GET http://localhost:8081/payments
+Accept: application/json
+
+###
+
+### POST new payment
+POST http://localhost:8081/payments
+Content-Type: application/json
+
+{
+  "memberId": 1,
+  "amount": 2500.00,
+  "date": "2024-06-03"
+}

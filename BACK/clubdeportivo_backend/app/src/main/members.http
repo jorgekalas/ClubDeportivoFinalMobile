@@ -1,0 +1,18 @@
+### GET members
+GET http://localhost:8081/members
+Accept: application/json
+
+###
+
+### POST new member
+POST http://localhost:8081/members
+Content-Type: application/json
+
+{
+  "name": "Juan Perez",
+  "dni": "12345678",
+  "email": "juan@example.com",
+  "active": true,
+  "paid": true,
+  "fitnessApproved": true
+}
