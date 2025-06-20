@@ -10,9 +10,3 @@ object Activities : Table() {
     override val primaryKey = PrimaryKey(id)
 }
 
-data class ActivityDTO(
-    val id: Int? = null,
-    val name: String,
-    val capacity: Int,
-    val available: Boolean
-)
